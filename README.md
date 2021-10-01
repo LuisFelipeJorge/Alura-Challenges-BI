@@ -1,5 +1,5 @@
 # Alura-Challenges-BI
-Desafio para estimular o estudo e desenvolvimento dos alunos da plataforma do cursos online Alura, na área de Data Science, e também incentivar o uso de ferramentas de visualização de dados como Power BI.
+Desafio para estimular o estudo e desenvolvimento dos alunos da plataforma de cursos online Alura, na área de Data Science, e também incentivar o uso de ferramentas de visualização de dados como Power BI.
 
 
 ## Primeira semana: Desafio Logístico
