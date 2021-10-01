@@ -166,12 +166,45 @@ Para as tasks acima, tendo a base previamente organizada (filtrando-se as redund
 
 ### Observações
 
-O que achei interessante deste desafio foi entender que os duas tabelas forneciam basicamente a mesma informação mas sobre **óticas diferentes**. Ou seja, dependento da visualização que desejamos apresentar, em ocasiões pode fazer mais sentido utilizar os dados da tabela de clientes e outros casos utilizar dos dados da tabela de dispostivos.
+O que achei interessante deste desafio foi entender que as duas tabelas forneciam basicamente a mesma informação mas sobre **óticas diferentes**. Ou seja, dependento da visualização que desejamos apresentar, há ocasiões em que pode fazer mais sentido utilizar os dados da tabela de clientes e casos que farão mais sentido os dados da tabela de dispostivos.
 
-Se quero aprensentar extratificando pelo perfil do cliente, uso a tabela de usuários. Se meu objetivo principal é entender a origem dos clicks por plataforma, utilizo a tabela por dispositivos.
+Se quero aprensentar extratificando pelo perfil do cliente, uso a tabela de usuários. Caso meu objetivo principal seja entender a origem dos clicks por plataforma, utilizo a tabela por dispositivos.
 
 
 ### Resultado final
 
 ![DashSem02](./assets/imgs/DashboardSem2.png "dashboard")
 
+## Terceira e última semana : Desafio financeiro
+
+Na última semana do desafio de BI da alura tivemos acesso à uma base de dados, que exigiu um conhecimento básico sobre **SQL** para que os alunos conseguissem utilizá-la adequadamente.
+
+Dessa vez o contexto do exercício era o de uma loja de vendas que possuia diversas tabelas relacionadas entre si. Deveríamos apresentar insights sobre o estado atual do processo de vendas e construir variações de cenários para futuro de acordo com as métricas que considerássemos relevantes.
+
+### Tarefas para a confecção do dashboard
+
+* Calcular a receita
+    Neste tópico pude enxergar que não havia muita constância na formatação dos dados associados aos valores de vendas na tabela de notas fiscais. Porém a informação do frete permanecia constante como 10% do valor da transação e, através dela foi possível se calcular o valor oiriginal.
+
+* Exibir custos
+    Como as tabelas estava todas relacionadas pelo id do produto ou pelo id do pedido, foi possível calcular métricas de valores cruzando colunas através da funções como RELATED, que permitira obter dados de tabelas conetadas e SUMX, que fornecia mais flexibilidade para o cálculo.
+
+* Calcular depesas
+    Para o cálculo foi considerado como despesas : frete + impostos.
+
+* Calcular o lucro
+    Lucro = receita - custos - despesas
+
+* Analisar e exibir mensalmente as métricas
+    Para poder demosntrar esse comportamento da maneira mais adequada, escolhi a exibição por um gráfico de áreas sobrepostas.
+
+* Análise de cenários
+    Criei um segunda página onde forneci ao usuário a possibilidade de variar métricas como impostos, valor de custo, frete e receita para poder avalaiar qual seria o peso de cada parêmetro no resultado do processo.
+
+### Obesarvações
+Também acreditei que seria interessante poder visualizar a contribuição individual de cada vendedor ao resultado final e o peso dos cinco produtos mais vendidos, apresentei aquele com gráfico pizza que exibia essa informação por meio de porcentagens e esta por meio de um gráfico de barras horizontais.
+
+### Resultado final
+
+
+![DashSem03](./assets/imgs/DashboardSem3.png "dashboard")
